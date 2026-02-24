@@ -1,0 +1,8 @@
+<!-- Placeholder for your logo icon -->
+<!-- Replace this with your actual logo-icon.png file -->
+<!-- Recommended size: 80x80px -->
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="80" height="80" fill="#0a0a0a"/>
+  <circle cx="40" cy="40" r="30" fill="#ff2d95"/>
+  <text x="40" y="48" font-family="Arial Black" font-size="20" fill="white" text-anchor="middle">OK</text>
+</svg>

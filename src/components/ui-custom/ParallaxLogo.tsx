@@ -79,20 +79,33 @@ export default function ParallaxLogo() {
           />
           
           <div className="relative flex items-center gap-4">
-            {/* Enhanced logo icon */}
-            <motion.div
-              animate={{
-                rotate: [0, 360],
-                scale: [1, 1.2, 1],
-              }}
-              transition={{
-                rotate: { duration: 3, repeat: Infinity, ease: "linear" },
-                scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
-              }}
-              className="w-12 h-12 bg-gradient-to-br from-crisis-pink to-crisis-purple rounded-xl flex items-center justify-center shadow-lg"
-            >
-              <span className="text-white font-black text-lg">OK</span>
-            </motion.div>
+            {/* Enhanced logo icon - replace with your actual logo icon */}
+            <div className="relative w-12 h-12">
+              <img 
+                src="/logo/logo-icon.svg" 
+                alt="Crisis Logo Icon"
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  // Fallback to animated placeholder if logo not found
+                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                }}
+              />
+              {/* Fallback animated placeholder */}
+              <motion.div
+                animate={{
+                  rotate: [0, 360],
+                  scale: [1, 1.2, 1],
+                }}
+                transition={{
+                  rotate: { duration: 3, repeat: Infinity, ease: "linear" },
+                  scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
+                }}
+                className="hidden w-12 h-12 bg-gradient-to-br from-crisis-pink to-crisis-purple rounded-xl flex items-center justify-center shadow-lg"
+              >
+                <span className="text-white font-black text-lg">OK</span>
+              </motion.div>
+            </div>
             
             <div className="flex flex-col">
               <motion.span 

@@ -1,0 +1,7 @@
+<!-- Placeholder for your main logo -->
+<!-- Replace this with your actual logo.png file -->
+<!-- Recommended size: 200x60px -->
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="60" fill="#0a0a0a"/>
+  <text x="100" y="35" font-family="Arial Black" font-size="24" fill="#ff2d95" text-anchor="middle">CRISIS</text>
+</svg>

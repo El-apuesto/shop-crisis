@@ -7,6 +7,7 @@ import PopupSystem from '@/components/popups/PopupSystem';
 import PopupInvasion from '@/components/popups/PopupInvasion';
 import ParallaxLogo from '@/components/ui-custom/ParallaxLogo';
 import ExposedFrameworks from '@/components/ui-custom/ExposedFrameworks';
+import Header from '@/components/layout/Header';
 import LandingSection from '@/sections/LandingSection';
 import ProductDetailSection from '@/sections/ProductDetailSection';
 import ArchivesSection from '@/sections/ArchivesSection';
@@ -256,6 +257,9 @@ function App() {
       
       {/* Popup invasion system */}
       {showPopupInvasion && <PopupInvasion />}
+      
+      {/* Header (appears after invasion) */}
+      {invasionComplete && <Header />}
       
       {/* Parallax logo (appears after invasion) */}
       {invasionComplete && <ParallaxLogo />}
