@@ -11,14 +11,7 @@ interface PopupMessage {
 }
 
 const popupMessages: PopupMessage[] = [
-  // Only show the final popup - no invasive popups
-  {
-    id: '52',
-    title: 'PAY MORE, GET LESS!',
-    message: 'Our exclusive business model! Premium chaos pricing! CLICK ANYWHERE TO CONTINUE!',
-    delay: 1000,
-    position: { x: 40, y: 50 }
-  }
+  // NO POPUPS - REMOVED COMPLETELY
 ];
 
 export default function PopupInvasion() {
