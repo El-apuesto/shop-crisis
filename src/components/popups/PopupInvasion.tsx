@@ -68,14 +68,14 @@ const popupMessages: PopupMessage[] = [
     id: '51',
     title: 'WAIT...',
     message: 'You\'re not the designer, are you? OH NO. We made a terrible mistake.',
-    delay: 5000,
+    delay: 3500,
     position: { x: 45, y: 45 }
   },
   {
     id: '52',
     title: 'PAY MORE, GET LESS!',
     message: 'Our exclusive business model! Premium chaos pricing! CLICK ANYWHERE TO CONTINUE!',
-    delay: 6000,
+    delay: 4000,
     position: { x: 40, y: 50 }
   }
 ];
