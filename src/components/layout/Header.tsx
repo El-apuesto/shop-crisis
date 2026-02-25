@@ -11,19 +11,9 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo placeholder - replace with your actual logo */}
         <div className="flex items-center gap-3">
-          <motion.div
-            animate={{
-              rotate: [0, 360],
-            }}
-            transition={{
-              duration: 8,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-            className="w-10 h-10 bg-gradient-to-br from-crisis-pink to-crisis-purple rounded-lg flex items-center justify-center"
-          >
+          <div className="w-10 h-10 bg-gradient-to-br from-crisis-pink to-crisis-purple rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">OK</span>
-          </motion.div>
+          </div>
           
           {/* Replace this img with your actual logo */}
           <div className="relative">

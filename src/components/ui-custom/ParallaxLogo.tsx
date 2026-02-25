@@ -28,20 +28,12 @@ export default function ParallaxLogo() {
       initial={{ opacity: 0, y: -100, scale: 0.5 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 1.5, delay: 0.5, type: "spring" }}
-      className="fixed top-8 left-1/2 z-[9994] pointer-events-none"
+      className="fixed top-1/2 left-1/2 z-[9994] pointer-events-none"
       style={{
-        transform: `translateX(-50%) translateY(${logoPosition}px) rotate(${rotation}deg)`,
+        transform: `translate(-50%, -50%) translateY(${logoPosition}px) rotate(${rotation}deg)`,
       }}
     >
       <motion.div
-        animate={{
-          rotate: [0, 360],
-          scale: [1, 1.05, 1],
-        }}
-        transition={{
-          rotate: { duration: 20, repeat: Infinity, ease: "linear" },
-          scale: { duration: 3, repeat: Infinity, ease: "easeInOut" }
-        }}
         className="relative"
       >
         {/* Enhanced glow effects */}
