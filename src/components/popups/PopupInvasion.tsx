@@ -101,10 +101,9 @@ export default function PopupInvasion() {
         setActivePopups(prev => [...prev, popup]);
         
         if (popup.id === '52') {
-          setTimeout(() => {
-            setCanCloseAll(true);
-            setTriggerFireworks(true); // Trigger fireworks!
-          }, 500);
+          // Final popup - close all immediately when clicked
+          setCanCloseAll(true);
+          setTriggerFireworks(true); // Trigger fireworks!
         }
       }, popup.delay);
       
