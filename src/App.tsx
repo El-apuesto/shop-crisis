@@ -258,14 +258,14 @@ function App() {
       {/* Popup invasion system */}
       {showPopupInvasion && <PopupInvasion />}
       
-      {/* Header (appears after invasion) */}
-      {invasionComplete && <Header />}
+      {/* Header - show immediately */}
+      <Header />
       
-      {/* Parallax logo (appears after invasion) */}
-      {invasionComplete && <ParallaxLogo />}
+      {/* Parallax logo - show immediately */}
+      <ParallaxLogo />
       
-      {/* Exposed frameworks (appears after invasion) */}
-      {invasionComplete && <ExposedFrameworks />}
+      {/* Exposed frameworks - show immediately */}
+      <ExposedFrameworks />
       
       {/* Navigation */}
       <CrisisOrb />

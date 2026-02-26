@@ -40,8 +40,7 @@ export default function PopupInvasion() {
   const [triggerFireworks, setTriggerFireworks] = useState(false);
 
   // Check if popup invasion has already been shown this session
-  const hasShownInvasion = typeof window !== 'undefined' && 
-    sessionStorage.getItem('popupInvasionShown') === 'true';
+  const hasShownInvasion = false; // Always show for now - remove session storage
 
   useEffect(() => {
     // Don't show invasion if already shown this session

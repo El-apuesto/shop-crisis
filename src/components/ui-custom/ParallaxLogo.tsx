@@ -83,20 +83,12 @@ export default function ParallaxLogo() {
                   e.currentTarget.nextElementSibling?.classList.remove('hidden');
                 }}
               />
-              {/* Fallback animated placeholder */}
-              <motion.div
-                animate={{
-                  rotate: [0, 360],
-                  scale: [1, 1.2, 1],
-                }}
-                transition={{
-                  rotate: { duration: 3, repeat: Infinity, ease: "linear" },
-                  scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
-                }}
+              {/* Fallback placeholder - no spinning */}
+              <div
                 className="hidden w-12 h-12 bg-gradient-to-br from-crisis-pink to-crisis-purple rounded-xl flex items-center justify-center shadow-lg"
               >
                 <span className="text-white font-black text-lg">OK</span>
-              </motion.div>
+              </div>
             </div>
             
             <div className="flex flex-col">
