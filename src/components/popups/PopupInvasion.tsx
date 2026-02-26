@@ -11,7 +11,26 @@ interface PopupMessage {
 }
 
 const popupMessages: PopupMessage[] = [
-  // NO POPUPS - REMOVED COMPLETELY
+  // Quick popups that happen once
+  { id: '1', title: 'New Email', message: 'Client wants emergency redesign!', delay: 200, position: { x: 20, y: 20 } },
+  { id: '2', title: 'Design Alert', message: 'Your portfolio crashed their server!', delay: 400, position: { x: 70, y: 30 } },
+  { id: '3', title: 'Meeting Request', message: 'Urgent: They need your chaos aesthetic!', delay: 600, position: { x: 45, y: 60 } },
+  { id: '4', title: 'Project Update', message: 'Your glitch art went viral!', delay: 800, position: { x: 30, y: 40 } },
+  { id: '5', title: 'Design Award', message: 'Nominated for "Most Traumatic UX"!', delay: 1000, position: { x: 60, y: 70 } },
+  { id: '6', title: 'Client Feedback', message: 'They love your existential dread approach!', delay: 1200, position: { x: 75, y: 35 } },
+  { id: '7', title: 'Design Award', message: 'Nominated for "Most Traumatizing UX 2026"!', delay: 1400, position: { x: 10, y: 80 } },
+  { id: '8', title: 'Team Meeting', message: 'Design system having existential crisis!', delay: 1600, position: { x: 50, y: 25 } },
+  { id: '9', title: 'Design Inspiration', message: 'Found your moodboard of error messages!', delay: 1800, position: { x: 35, y: 55 } },
+  { id: '10', title: 'New Project', message: 'Client wants your signature chaos!', delay: 2000, position: { x: 80, y: 45 } },
+  
+  // Final popup - closes all
+  {
+    id: '52',
+    title: 'PAY MORE, GET LESS!',
+    message: 'Our exclusive business model! Premium chaos pricing! CLICK ANYWHERE TO CONTINUE!',
+    delay: 2500,
+    position: { x: 40, y: 50 }
+  }
 ];
 
 export default function PopupInvasion() {
